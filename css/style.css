@@ -9,6 +9,7 @@
   scroll-behavior: smooth;
   scroll-padding-top: 2rem;
   font-family: "Poppins", sans-serif;
+  max-width: 100%;
 }
 :root {
   --main-color: #033a80;
@@ -162,6 +163,23 @@ header.shadow {
   transform: scale(1.1);
   transition: 1s;
 }
+.Price-button {
+  width: 160px;
+  cursor: pointer;
+  background: #000000;
+  color: #fff;
+  justify-content: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-left: 35%;
+}
+.Price-button:hover {
+  background: var(--hover);
+} 
+
+.Price-button{
+  margin-left: 25%;
+}
 
 .Kleen {
   position: relative;
@@ -307,6 +325,146 @@ header.shadow {
   transition: 1s;
 }
 
+.Transient {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 0.2fr 1fr 1fr;
+  align-items: center;
+  gap: 1rem;
+}
+.Transient-img {
+  order: 3;
+  margin-top: -2rem;
+}
+.Transient-img img {
+  width: 100%;
+}
+
+.Transient-text span {
+  font-size:50px;
+  font-weight: 500;
+}
+.Transient-text h1 {
+  font-size:large;
+}
+.Transient-text h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.Transient-text p {
+  font-size: var(--p-font);
+  font-weight: 400;
+  margin: 0.7rem 0 1rem;
+}
+ .social {
+  display: flex;
+  flex-direction: column;
+}
+.social a {
+  margin-bottom: 1rem;
+  font-size: 22px;
+  color: var(--text-color);
+}
+.social a:hover {
+  color: var(--hover);
+}
+.Transient-content {
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(20%, auto));
+  gap: 2.5rem;
+  margin-top: -9rem;
+}
+.Transient-img {
+  overflow: hidden;
+  border-radius: 0.9rem;
+}
+.Transient-vid{
+ align-items: center;
+  border-radius: 0rem;
+  width: 80%;
+}
+.Transient-img img {
+  width: 100%;
+  display:flex;
+}
+.Transient-img img:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+.Prima {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 0.2fr 1fr 1fr;
+  align-items: center;
+  gap: 1rem;
+}
+.Prima-img {
+  order: 3;
+  margin-top: -2rem;
+}
+.Prima-img img {
+  width: 100%;
+}
+
+.Prima-text span {
+  font-size:50px;
+  font-weight: 500;
+}
+.Prima-text h1 {
+  font-size:large;
+}
+.Prima-text h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.Prima-text p {
+  font-size: var(--p-font);
+  font-weight: 400;
+  margin: 0.7rem 0 1rem;
+}
+ .social {
+  display: flex;
+  flex-direction: column;
+}
+.social a {
+  margin-bottom: 1rem;
+  font-size: 22px;
+  color: var(--text-color);
+}
+.social a:hover {
+  color: var(--hover);
+}
+.Prima-content {
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(20%, auto));
+  gap: 2.5rem;
+  margin-top: -9rem;
+}
+.Prima-img {
+  overflow: hidden;
+  border-radius: 0.9rem;
+}
+.Prima-vid{
+ align-items: center;
+  border-radius: 0rem;
+  width: 80%;
+}
+.Prima-img img {
+  width: 100%;
+  display:flex;
+}
+.Prima-img img:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}
+
 
  .contact-form {
   display: grid;
@@ -350,28 +508,6 @@ form textarea {
 .contact-button:hover {
   background: var(--hover);
 } 
-.footer {
-  display: grid;
-  place-items: center;
-  padding: 20px;
-  background: #ebebeb;
-  color: #000;
-}
-.footer h2 {
-  font-size: 1.5rem;
-  margin-bottom: 1.6rem;
-}
-.footer-social a i{
-  color: rgb(10, 26, 208);
-  font-size: 25px;
-  margin-left: 10px;
-  text-align: center;
-  line-height: 40px;
-  background-color: #fff;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-}
 
 @media (max-width: 991px) {
   header {
